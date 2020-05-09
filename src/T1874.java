@@ -73,20 +73,6 @@ public class T1874 {
         return x*y + s1 + s2;
     }
 
-
-    public static double sp(double a, double b, double alpha, double beta) {
-        double x = Math.sin(alpha)*a;
-        double y = Math.sin(beta)*b;
-
-        System.out.println("X = " + x);
-        System.out.println("Y = " + y);
-
-        double s1 = a*x*Math.cos(alpha)/2;
-        double s2 = b*y*Math.cos(beta)/2;
-
-        return x*y + s1 + s2;
-    }
-
     public static class MyScanner {
         BufferedReader br;
         StringTokenizer st;
