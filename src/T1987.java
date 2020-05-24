@@ -60,7 +60,7 @@ public class T1987 {
             p.add(result[i]);
         }
 
-        Collections.sort(p); // important stable sort and conditions from task (order of segments)
+        Collections.sort(p); // important stable sort and conditions from task (order of segments) -
 //        for (SegmentEnd pt : p) {
 //            out.print("["+pt.x+", " + typeToString(pt.type)+", " + (pt.index+1) + "] ");
 //        }
