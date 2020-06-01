@@ -47,7 +47,7 @@ public class T1205 {
         }
 
         int[][] g = new int[n + 2][n + 2];
-        int u=0, v=0;
+        int u, v;
         while (true) {
             u = sc.nextInt();
             v = sc.nextInt();
@@ -62,7 +62,7 @@ public class T1205 {
         xy[n + 1][0] = sc.nextDouble();
         xy[n + 1][1] = sc.nextDouble();
 
-        Integer[] from = new Integer[n + 2]; // 0 - stock, n+1 - finish
+        int[] from = new int[n + 2]; // 0 - stock, n+1 - finish
         double[] best = new double[n + 2]; // 0 - stock, n+1 - finish
 
         for (int i = 1; i <= n + 1; i++) {
