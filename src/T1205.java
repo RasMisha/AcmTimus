@@ -56,12 +56,6 @@ public class T1205 {
             g[v][u] = 1;
         }
 
-        g[0][n + 1] = 1;
-        for (int i = 1; i <= n; i++) {
-            g[0][i] = 1;
-            g[i][n + 1] = 1;
-        }
-
         xy[0][0] = sc.nextDouble();
         xy[0][1] = sc.nextDouble();
 
@@ -85,9 +79,7 @@ public class T1205 {
             for (int i = 0; i <= n + 1; i++) {
                 if (i != item.v) {
                     double vel = v2;
-                    if ((item.v == 0 || item.v == n + 1)
-                        || (i == 0 || i == n + 1)
-                        || g[item.v][i] == 0) {
+                    if (g[item.v][i] == 0) {
                         vel = v1;
                     }
                     double x2 = xy[i][0];
@@ -146,22 +138,8 @@ public class T1205 {
             return Integer.parseInt(next());
         }
 
-        long nextLong() {
-            return Long.parseLong(next());
-        }
-
         double nextDouble() {
             return Double.parseDouble(next());
-        }
-
-        String nextLine(){
-            String str = "";
-            try {
-                str = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return str;
         }
 
     }
