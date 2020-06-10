@@ -4,6 +4,7 @@ import java.util.*;
 public class T0000 {
     static PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
     static MyScanner sc;
+    static double EPS = 0.00000001;
 
     static {
         try {
@@ -20,6 +21,9 @@ public class T0000 {
 
     public static void doTask(){
     }
+
+    static long pow(long a, int p) { if (p == 1) return a;long h = pow(a, p/2);long r = h*h;if (p%2 == 1) r*=a;return r; }
+
 
     public static class MyScanner {
         BufferedReader br;
