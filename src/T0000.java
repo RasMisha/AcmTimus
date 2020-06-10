@@ -23,7 +23,7 @@ public class T0000 {
     }
 
     static long pow(long a, int p) { if (p == 1) return a;long h = pow(a, p/2);long r = h*h;if (p%2 == 1) r*=a;return r; }
-
+    static long gcd(long a, long b) { if (b==0) return a;return gcd(b, a%b); }
 
     public static class MyScanner {
         BufferedReader br;
